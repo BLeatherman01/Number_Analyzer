@@ -6,15 +6,15 @@
         {
             Console.Write("Hello, What is your name? \n");
             string name = Console.ReadLine();
-            
+
             bool keepgoing = true;
-           
+
             while (keepgoing)
             {
-                                
+
                 Console.WriteLine("Please entered a number between 1 and 100");
                 int num = int.Parse(Console.ReadLine());
-                
+
                 if (num <= 0 || num > 100)
                 {
                     Console.WriteLine($"{name} that is not a valid number in the range");
@@ -39,30 +39,23 @@
                 {
                     Console.WriteLine($"{name} the number is even and between 26 and 60 inclusive");
                 }
-                
-                
-                bool askAgain = true;
-                while (askAgain)
-                {
-                    Console.WriteLine($"{name}, Would you like to continue? Y/N");
-                    string input = Console.ReadLine().ToLower();
 
-                    if (input == "y")
-                    {
-                        keepgoing = true;
-                        askAgain = false;
-                    }
-                    else if (input == "n")
-                    {
-                        keepgoing = false;
-                        askAgain = false;
-                    }
-                    else
-                    {
-                        Console.WriteLine("I didn't understand that let's try that again");
-                        askAgain = true;
-                    }
+                Console.WriteLine($"{name}, would you like to continue? Y/N");
+                string input = Console.ReadLine().ToLower();
+
+                if (input == "y")
+                {
+                    continue;
                 }
+                else if (input == "n")
+                {
+                    keepgoing = false;
+                }
+                else
+                {
+                    Console.WriteLine("I didn't understand that let's try that again");
+                }
+
             }
         }
     }
