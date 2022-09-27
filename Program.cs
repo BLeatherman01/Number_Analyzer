@@ -37,7 +37,7 @@
                 }
                 else if (num % 2 == 0 && num >= 26 && num <= 60)
                 {
-                    Console.WriteLine($"{name} even and between 26 and 60 inclusive");
+                    Console.WriteLine($"{name} the number is even and between 26 and 60 inclusive");
                 }
                 
                 
