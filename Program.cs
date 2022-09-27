@@ -11,9 +11,7 @@
            
             while (keepgoing)
             {
-                //Console.Write("Hello, What is your name? \n");
-                //string name = Console.ReadLine();
-                
+                                
                 Console.WriteLine("Please entered a number between 1 and 100");
                 int num = int.Parse(Console.ReadLine());
                 
